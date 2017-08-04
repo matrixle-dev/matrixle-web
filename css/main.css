@@ -3,9 +3,14 @@ nav .brand-logo {
   color: #444;
 }
 
+span {
+    margin-left: 20px;
+}
+
 p {
   line-height: 2rem;
 }
+
 
 .button-collapse {
   color: #26a69a;
