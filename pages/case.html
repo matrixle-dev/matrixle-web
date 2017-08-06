@@ -28,12 +28,39 @@
         </ul>
     </div>
   </nav>
-
-<!--case list-->
+<br>
   <div ng-app="List">
+<!--search boxes-->
+<div class="row">
+  <form class="col s12">
+    <div class="row">
+      <div class="input-field col s6">
+    <input type="text" id="keyword" class="validate" ng-model="globalSearch.$">
+      <label class="active" for="keyword">搜索关键词</label>
+      </div>
+    <div class="input-field col s6">
+    <input  type="text" id="school" class="validate" ng-model="globalSearch.School">
+     <label for="school">按学校查询</label>
+     </div>
+    </div>
+    <div class="row">
+      <div class="input-field col s6">
+    <input type="text" id="major" class="validate" ng-model="globalSearch.Major">
+    <label for="major">按专业查询</label>
+      </div>
+      <div class="input-field col s6">
+    <input  type="text" id="term" class="validate" ng-model="globalSearch.Round">
+    <label for="term">按轮次查询</label>  
+  </div>
+  </div>
+  </form>
+</div>
+<!--case list-->
+
       <div ng-controller="CaseController">
-          <div ng-repeat="item in list">
-              <li>
+        <ul>  
+        <li ng-repeat="item in list | filter:globalSearch">
+            
           <div class="card horizontal">
       <div class="card-stacked">
        
@@ -57,7 +84,8 @@
            </div>              
 
               </li>
-          </div>
+          </ul>
+
             </div>
        </div>
 

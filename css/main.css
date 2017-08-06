@@ -3,6 +3,16 @@ nav .brand-logo {
   color: #444;
 }
 
+input[type=text] {
+    width: 50px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 100%;
+}
+
 span {
     margin-left: 20px;
 }
