@@ -30,36 +30,64 @@
   </nav>
 <br>
   <div ng-app="List">
+     <div ng-controller="CaseController">
 <!--search boxes-->
 <div class="row">
   <form class="col s12">
+  
+   
+    
     <div class="row">
-      <div class="input-field col s6">
-    <input type="text" id="keyword" class="validate" ng-model="globalSearch.$">
-      <label class="active" for="keyword">搜索关键词</label>
-      </div>
-    <div class="input-field col s6">
-    <input  type="text" id="school" class="validate" ng-model="globalSearch.School">
+       <div class="input-field col s5">
+    <input  type="text" id="school" class="validate" ng-model="globalSearch.School"/>
      <label for="school">按学校查询</label>
      </div>
-    </div>
-    <div class="row">
-      <div class="input-field col s6">
-    <input type="text" id="major" class="validate" ng-model="globalSearch.Major">
+      <div class="input-field col s5">
+    <input type="text" id="major" class="validate" ng-model="globalSearch.Major"/>
     <label for="major">按专业查询</label>
       </div>
-      <div class="input-field col s6">
-    <input  type="text" id="term" class="validate" ng-model="globalSearch.Round">
-    <label for="term">按轮次查询</label>  
-  </div>
+
+      <div class="row">
+      <div class="input-field col s3">
+SAT范围：<input type="number" placeholder="最低分"name="filterSatMin" ng-model="filterModelMin.SAT" /> 
+     
+到 <input type="number" placeholder="最高分"name="filterSatMax" ng-model="filterModelMax.SAT" />
+  </div>      
+
+        <div class="input-field col s3">
+ACT范围：<input type="number" placeholder="最低分"name="filterActMin" ng-model="filterModelMin.ACT" /> 
+     
+到 <input type="number" placeholder="最高分"name="filterActMax" ng-model="filterModelMax.ACT" />
+  </div> 
+
+ <div class="input-field col s3">
+托福范围：<input type="number" placeholder="最低分"name="filterTofMin" ng-model="filterModelMin.TOEFL" /> 
+     
+到 <input type="number" placeholder="最高分"name="filterTofMax" ng-model="filterModelMax.TOEFL" />
+  </div> 
+
+        </div>
+<div class="row">
+  <div class="col s2 offset-s3">
+    <button class="btn waves-effect" ng-click="clearSearch()">清空所有条件</a>
+    </div>
+  <div class="col s2">
+ <button class="btn waves-effect" ng-click="showResult()">开始搜索</button>
+ </div>
+
+  
+
+     </div>
   </div>
   </form>
 </div>
 <!--case list-->
 
-      <div ng-controller="CaseController">
-        <ul>  
-        <li ng-repeat="item in list | filter:globalSearch">
+
+
+     
+        <ul id="filterList" style="display:none">  
+        <li ng-repeat="item in list | filter: globalSearch | filter:byRange('SAT', filterModelMin.SAT, filterModelMax.SAT) | filter:byRange('ACT', filterModelMin.ACT, filterModelMax.ACT) | filter: byRange('TOEFL', filterModelMin.TOEFL, filterModelMax.TOEFL)">
             
           <div class="card horizontal">
       <div class="card-stacked">
@@ -86,6 +114,7 @@
               </li>
           </ul>
 
+           
             </div>
        </div>
 
