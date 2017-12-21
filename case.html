@@ -12,35 +12,17 @@
 <body>
     <nav class="nav">
         <ul class="logo ripple">
-            <a href="index.html">主页</a>
+            <a href="index.html">
+                <img src="./img/logo.svg" width="50px">
+            </a>
         </ul>
         <ul class="menu">
             <li class="ripple"><a href="#">关于我们</a></li>
-            <li class="ripple"><a href="#">登陆／注册</a></li>
+            <li class="ripple"><a href="#">登陆/注册</a></li>
         </ul>
         <ul class="menu-btn material-icon">menu</ul> 
     </nav>
-    <nav>
-        <div>
-            <a href="#">
-              <img src="../images/logo.png" style="width:290px; height:55px;">
-            </a>
-            <ul id="nav-mobile">
-                <li><a href="index.html">主页</a></li>
-                <li><a href="about.html">关于我们</a></li>
-            </ul>
-            <ul id="nav-mobile">
-                <li><a href="login.html">登陆／注册</a></li>
-            </ul>
-            <a href="#" data-activates="mobile-demo"><i>menu</i></a>
-            <ul  id="mobile-demo">
-                <li><a href="sass.html">主页</a></li>
-                <li><a href="badges.html">关于我们</a></li>
-                <li><a href="collapsible.html">登陆／注册</a></li>
-            </ul>
-        </div>
-    </nav>
-    <br>
+
     <div ng-app="List">
         <div ng-controller="CaseController">
             <!--search boxes-->
