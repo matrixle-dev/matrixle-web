@@ -1,0 +1,258 @@
+@import "./material.css";
+
+
+.center-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.column-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    flex-direction: column;
+}
+
+.column-container>ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    width: 90%;
+}
+
+.column-container>ul>li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+.column-container>ul>li:hover {
+    border-bottom: 3px solid #e1262a;
+}
+
+.column-container>ul>li>p {
+    color: #aaaaaa;
+    font-size: 35px;
+    margin: 0px;
+}
+
+.row-container {
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    flex-direction: row;
+    width: 70%;
+}
+
+.text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.text-container p {
+    font-family: Roboto;
+    text-align: left;
+    padding: 20px;
+}
+
+.text-container p::first-letter {
+    font-size: 200%;
+    color: #e1262a;
+}
+
+.text-container .icon {
+    font-size: 60px;
+    text-align: center;
+}
+
+.large-material-icon {
+    text-decoration: none;
+    font-family: "Material Icons";
+}
+
+.mid-material-icon {
+    text-decoration: none;
+    font-family: "Material Icons";
+}
+
+
+.photo-intro-container {
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    /*width: 70%;*/
+    align-items: center;
+    justify-content: center;
+    font-family: Roboto;
+}
+
+.photo-intro-container .intro {
+    align-content: flex-start;
+    align-items: flex-start;
+}
+
+.photo-intro-container .intro p {
+    font-family: Roboto;
+    text-align: left;
+}
+
+.photo-intro-container .intro p::first-letter {
+    font-size: 200%;
+    color: #e1262a;
+}
+
+
+.photo-intro-container .intro h2 {
+    text-align: center;
+    font-family: Roboto;
+    font-weight: lighter;
+    font-size: 27px;
+    color: #e1262a;
+}
+
+.photo-intro-container .photo img{
+    width: 400px;
+}
+.photo-intro-container .photo figcaption{
+    font-family: Roboto;
+    font-size: 12px;
+    padding-top: 10px;
+    color: #777777;
+}
+
+
+
+/* Desktop styling */
+
+@media only screen and (min-width: 800px) {
+
+    .column-container ul {
+        flex-direction: row;
+    }
+
+    .large-material-icon {
+        font-size: 100px;
+        padding: 20px;
+    }
+
+    .mid-material-icon {
+        font-size: 60px;
+        padding: 20px;
+    }
+
+    .column-container p {
+        font-size: 35px;
+    }
+
+    .text-container p {
+        font-size: 20px;
+    }
+    .photo-intro-container {
+        flex-direction: row;
+    }
+
+        .photo-intro-container .intro p {
+        font-size: 20px;
+    }
+}
+
+
+
+
+
+
+
+/* Tablet styling */
+
+@media only screen and (max-width: 800px) {
+    .large-material-icon {
+        font-size: 60px;
+        padding: 20px;
+    }
+
+    .mid-material-icon {
+        font-size: 40px;
+        padding: 20px;
+    }
+
+    .column-container p {
+        font-size: 20px;
+    }
+
+    .text-container p {
+        font-size: 18px;
+    }
+    .photo-intro-container {
+        flex-direction: column;
+    }
+
+    .photo-intro-container .intro p {
+        font-size: 15px;
+    }
+
+    .photo-intro-container .intro h2 {
+        font-size: 20px;
+    }
+}
+
+
+
+
+
+
+
+/* Phone styling */
+
+@media only screen and (max-width: 400px) {
+    .column-container ul {
+        flex-direction: column;
+    }
+
+    .large-material-icon {
+        font-size: 70px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .mid-material-icon {
+        font-size: 30px;
+        padding: 20px;
+    }
+
+    .column-container p {
+        font-size: 30px;
+    }
+
+    .text-container p {
+        font-size: 14px;
+    }
+    .photo-intro-container {
+        flex-direction: column;
+    }
+
+    .photo-intro-container .intro p {
+        font-size: 10px;
+    }
+    .photo-intro-container .intro h2 {
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .row-container {
+        flex-direction: column;
+
+    }
+
+}

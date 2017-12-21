@@ -1,0 +1,63 @@
+
+table {
+	font-size: 22px;
+	font-family: Roboto;
+	font-weight: lighter;
+	border-collapse: collapse;
+	width: 60%;
+	margin-top: 50px;
+}
+
+th {
+	padding: 20px;
+	text-align: left;
+	border-bottom: 3px solid #e1262a;
+}
+
+td {
+	padding: 20px;
+}
+
+font-size: 10px;
+
+@media only screen and (min-width: 800px) {
+	table { 
+		margin-top: 50px;
+		width: 60%;
+	}
+	table th {
+		font-size:  22px;
+	}
+	table td {
+		font-size:  22px;
+	}
+
+
+}
+
+@media only screen and (max-width: 800px) {
+		table { 
+		margin-top: 30px;
+		width: 80%;
+	}
+		table th {
+		font-size:  16px;
+	}
+	table td {
+		font-size:  16px;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+		table { 
+		margin-top: 0px;
+		width: 100%;
+	}
+		table th {
+		font-size:  14px;
+	}
+	table td {
+		font-size:  14px;
+	}
+
+}
