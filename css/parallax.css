@@ -1,6 +1,5 @@
 .parallax-section {
     height: 400px;
-    background-color: black;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -8,19 +7,21 @@
 
     position: relative;
     opacity: 0.93;
+    background-color: grey;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    box-shadow: 0px 10px 30px 0px #00000099 inset;
-    min-height: 100%;
+    z-index: 0;
+    box-shadow: 0px 20px 20px -20px #00000099 inset;
+    /*box-shadow: 0px 10px 30px 0px #00000099 inset;*/
 }
 
 .parallax-section h1 {
     color: white;
     font-family: 'Roboto';
     font-weight: lighter;
-    text-shadow: 0px 0px 20px #000000;
+    text-shadow: 0px 0px 10px #000000;
 }
 
 .parallax-section p {
@@ -29,7 +30,10 @@
     font-weight: lighter;
     font-size: 20px;
     text-shadow: 0px 0px 20px #000000;
+    width: 70%;
 }
+
+
 
 
 /* Desktop styling */
@@ -42,6 +46,8 @@
 }
 
 
+
+
 /* Tablet styling */
 
 @media only screen and (max-width: 800px) {
@@ -50,6 +56,8 @@
         font-size: 35px;
     }
 }
+
+
 
 
 /* Phone styling */

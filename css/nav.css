@@ -48,7 +48,7 @@
 }
 
 .nav .menu a:hover {
-    color: #e1262a;
+    color: #ffa90f;
 }
 
 .nav .logo {
@@ -68,13 +68,13 @@
     /*float: left;*/
     font-weight: bold;
     font-size: 20px;
-    background-image: -webkit-linear-gradient(180deg, #e1262a 50%, #333333 50%);
+    background-image: -webkit-linear-gradient(180deg, #ffa90f 50%, #333333 50%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .nav .logo a:hover {
-    background-image: -webkit-linear-gradient(180deg, #333333 50%, #e1262a 50%);
+    background-image: -webkit-linear-gradient(180deg, #333333 50%, #ffa90f 50%);
 }
 
 .nav ul {
@@ -103,7 +103,7 @@
 }
 
 .nav li:hover {
-    border-bottom: 2px solid #e1262a;
+    border-bottom: 2px solid #ffa90f;
 }
 
 .mobile-menu {
@@ -127,7 +127,7 @@
 
 .footer{
     display: flex;
-    background:#e1262a;
+    background:#ffa90f;
     height: 100px;
     color: white;
     border-top: 3px #c1414b solid;
