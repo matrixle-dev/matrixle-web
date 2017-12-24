@@ -31,6 +31,7 @@ input[type=number]::placeholder {
     color: #ffffff88;
 }
 
+
 button {
 	font-family: Roboto;
     font-size: 20px;
@@ -42,7 +43,7 @@ button {
 }
 
 .button {
-    color: white;
+    color: #ffffff;
     background-color: #ffffff00;
     transition: background-color 0.5s;
 }
@@ -50,7 +51,6 @@ button {
 .button:hover {
     color: #000000;
     mix-blend-mode: lighten;
-	mix-blend-mode: lighten;
 	background-color: #ffffffff;
 }
 
@@ -67,11 +67,8 @@ button {
 }
 
 .button-highlight:hover {
-	    color: #000000;
-	mix-blend-mode: lighten;
+	color: #000000;
 	background-color: #ffffffff;
-
-
 }
 
 

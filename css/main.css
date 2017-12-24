@@ -131,6 +131,11 @@ form {
 
 }
 
+form.h1 {
+    font-family: Roboto;
+    font-weight: lighter;
+}
+
 
 
 
@@ -144,9 +149,11 @@ form {
     color: white;
     background: linear-gradient(-45deg, #EE7752, #f54b60, #9357a0, #5663ab, #23A6D5, #23D5AB);
     background-size: 400% 400%;
-    -webkit-animation: milky-way 50s ease infinite;
-    -moz-animation: milky-way 50s ease infinite;
-    animation: milky-way 50s ease infinite;
+    -webkit-animation: milky-way 60s steps(150) infinite;
+    -moz-animation: milky-way 60s steps(150) infinite;
+    animation: milky-way 60s steps(150) infinite;
+    
+    box-shadow: 0px 20px 20px -20px #00000099 inset;
 }
 
 @-webkit-keyframes milky-way {

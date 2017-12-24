@@ -3,7 +3,6 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <!-- libraries -->
     <link rel="stylesheet" type="text/css" href="./css/main.css">
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,7 +12,7 @@
     <nav class="nav">
         <ul class="logo ripple">
             <a href="index.html">
-                <img src="./img/logo.svg" width="200px">
+                <img src="./img/logo.svg" height="50px">
             </a>
         </ul>
         <ul class="menu">
@@ -26,6 +25,9 @@
         <!--search boxes-->
         <div>
             <form>
+                <h1>Matrixel留学数据矩阵</h1>
+                <br>
+                <br>
                 <div>
                     <input type="text" id="school" ng-model="globalSearch.School" placeholder="学校" />
                     <input type="text" id="major" ng-model="globalSearch.Major" placeholder="专业" />
@@ -34,19 +36,19 @@
                 <div>
                     <div>
                         SAT范围：
-                        <input type="number" placeholder="最低分" name="filterSatMin" ng-model="filterModelMin.SAT" /> 到
+                        <input type="number" min="0" placeholder="最低分" name="filterSatMin" ng-model="filterModelMin.SAT" /> 到
                         <input type="number" placeholder="最高分" name="filterSatMax" ng-model="filterModelMax.SAT" />
                     </div>
                     <br>
                     <div>
                         ACT范围：
-                        <input type="number" placeholder="最低分" name="filterActMin" ng-model="filterModelMin.ACT" /> 到
+                        <input type="number" min="0" placeholder="最低分" name="filterActMin" ng-model="filterModelMin.ACT" /> 到
                         <input type="number" placeholder="最高分" name="filterActMax" ng-model="filterModelMax.ACT" />
                     </div>
                     <br>
                     <div>
                         托福范围：
-                        <input type="number" placeholder="最低分" name="filterTofMin" ng-model="filterModelMin.TOEFL" /> 到
+                        <input type="number" min="0" placeholder="最低分" name="filterTofMin" ng-model="filterModelMin.TOEFL" /> 到
                         <input type="number" placeholder="最高分" name="filterTofMax" ng-model="filterModelMax.TOEFL" />
                     </div>
                     <br>
