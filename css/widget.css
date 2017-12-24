@@ -1,0 +1,88 @@
+input[type=text] {
+    color: white;
+    font-family: Roboto;
+    font-size: 20px;
+    outline: none;
+    height: 40px;
+    background-color: #ffffff33;
+    border-width: 0px;
+    border-radius: 40px;
+    padding: 5px 20px 5px 20px;
+}
+
+input[type=text]::placeholder {
+    color: #ffffff88;
+}
+
+
+input[type=number] {
+    color: white;
+    font-family: Roboto;
+    font-size: 20px;
+    outline: none;
+    height: 40px;
+    background-color: #ffffff33;
+    border-width: 0px;
+    border-radius: 40px;
+    padding: 5px 20px 5px 20px;
+}
+
+input[type=number]::placeholder {
+    color: #ffffff88;
+}
+
+button {
+	font-family: Roboto;
+    font-size: 20px;
+    outline: none;
+    height: 40px;
+    border-width: 0px;
+    border-radius: 40px;
+    padding: 5px 20px 5px 20px;
+}
+
+.button {
+    color: white;
+    background-color: #ffffff00;
+    transition: background-color 0.5s;
+}
+
+.button:hover {
+    color: #000000;
+    mix-blend-mode: lighten;
+	mix-blend-mode: lighten;
+	background-color: #ffffffff;
+}
+
+.button-highlight {
+    color: #ffffff;
+    mix-blend-mode: lighten;
+    overflow: hidden;
+    background-color: #ffffff00;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #ffffff;
+    transition: background-color 0.5s;
+
+}
+
+.button-highlight:hover {
+	    color: #000000;
+	mix-blend-mode: lighten;
+	background-color: #ffffffff;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

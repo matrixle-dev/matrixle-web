@@ -20,76 +20,69 @@
             <li class="ripple"><a href="#">关于我们</a></li>
             <li class="ripple"><a href="#">登陆/注册</a></li>
         </ul>
-        <ul class="menu-btn material-icon">menu</ul> 
+        <ul class="menu-btn material-icon">menu</ul>
     </nav>
-
-    <div ng-app="List">
-        <div ng-controller="CaseController">
-            <!--search boxes-->
-            <div>
-                <form>
+    <div class="column-container bkg-milky-way">
+        <!--search boxes-->
+        <div>
+            <form>
+                <div>
+                    <input type="text" id="school" ng-model="globalSearch.School" placeholder="学校" />
+                    <input type="text" id="major" ng-model="globalSearch.Major" placeholder="专业" />
+                </div>
+                <br>
+                <div>
                     <div>
-                        <div>
-                            <input type="text" id="school"  ng-model="globalSearch.School" />
-                            <label for="school">按学校查询</label>
-                        </div>
-                        <div>
-                            <input type="text" id="major"  ng-model="globalSearch.Major" />
-                            <label for="major">按专业查询</label>
-                        </div>
-                        <div>
-                            <div>
-                                SAT范围：
-                                <input type="number" placeholder="最低分" name="filterSatMin" ng-model="filterModelMin.SAT" /> 到
-                                <input type="number" placeholder="最高分" name="filterSatMax" ng-model="filterModelMax.SAT" />
-                            </div>
-                            <div>
-                                ACT范围：
-                                <input type="number" placeholder="最低分" name="filterActMin" ng-model="filterModelMin.ACT" /> 到
-                                <input type="number" placeholder="最高分" name="filterActMax" ng-model="filterModelMax.ACT" />
-                            </div>
-                            <div>
-                                托福范围：
-                                <input type="number" placeholder="最低分" name="filterTofMin" ng-model="filterModelMin.TOEFL" /> 到
-                                <input type="number" placeholder="最高分" name="filterTofMax" ng-model="filterModelMax.TOEFL" />
-                            </div>
-                        </div>
-                        <div>
-                            <div>
-                                <button  ng-click="clearSearch()">清空所有条件</a>
-                            </div>
-                            <div>
-                                <button  ng-click="showResult()">开始搜索</button>
-                            </div>
-                        </div>
+                        SAT范围：
+                        <input type="number" placeholder="最低分" name="filterSatMin" ng-model="filterModelMin.SAT" /> 到
+                        <input type="number" placeholder="最高分" name="filterSatMax" ng-model="filterModelMax.SAT" />
                     </div>
-                </form>
-            </div>
-            <!--case list-->
-            <ul id="filterList" style="display:none">
-                <li ng-repeat="item in list | filter: globalSearch | filter:byRange('SAT', filterModelMin.SAT, filterModelMax.SAT) | filter:byRange('ACT', filterModelMin.ACT, filterModelMax.ACT) | filter: byRange('TOEFL', filterModelMin.TOEFL, filterModelMax.TOEFL)">
+                    <br>
                     <div>
-                        <div>
-                            <div class="grid_10 lucky" style="font: 22px arial">{{item.Year}}<strong style="font-weight: bold; color: #2453B8">{{item.Major}}</strong>录取学生 &nbsp;&nbsp;
-                                <strong style="color: #AEC8F1">{{item.Round}}</strong>
-                                <div style="font-weight: bold">
-                                    {{item.School}}
-                                </div>
-                            </div>
-                            <div class="grid_9" style="font: 20px arial; color: #24B85A">标化考试成绩:
-                                <br /> </div>
-                            <div style="font: 22px arial">
-                                <strong style="font-weight: bold">SAT: {{item.SAT}} &nbsp;&nbsp;
-                ACT: {{item.ACT}} &nbsp;&nbsp; TOEFL: {{item.TOEFL}} &nbsp;&nbsp; {{item.SAT2}} &nbsp;&nbsp; {{item.APALEVELIB}}<br/></strong>
-                                <strong style="font-weight: bold">活动：<strong>{{item.Activities}}</strong>
-                            </div>
-                        </div>
+                        ACT范围：
+                        <input type="number" placeholder="最低分" name="filterActMin" ng-model="filterModelMin.ACT" /> 到
+                        <input type="number" placeholder="最高分" name="filterActMax" ng-model="filterModelMax.ACT" />
                     </div>
-                </li>
-            </ul>
+                    <br>
+                    <div>
+                        托福范围：
+                        <input type="number" placeholder="最低分" name="filterTofMin" ng-model="filterModelMin.TOEFL" /> 到
+                        <input type="number" placeholder="最高分" name="filterTofMax" ng-model="filterModelMax.TOEFL" />
+                    </div>
+                    <br>
+                </div>
+                <br>
+                <div>
+                    <div>
+                        <button class="button" ng-click="clearSearch()">清空</button>
+                        <button class="button-highlight" ng-click="showResult()">搜索</button>
+                    </div>
+                </div>
+            </form>
         </div>
     </div>
-    <!---->
+    <!--case list-->
+    <ul id="filterList" style="display:none">
+        <li ng-repeat="item in list | filter: globalSearch | filter:byRange('SAT', filterModelMin.SAT, filterModelMax.SAT) | filter:byRange('ACT', filterModelMin.ACT, filterModelMax.ACT) | filter: byRange('TOEFL', filterModelMin.TOEFL, filterModelMax.TOEFL)">
+            <div>
+                <div>
+                    <div class="grid_10 lucky" style="font: 22px arial">{{item.Year}}<strong style="font-weight: bold; color: #2453B8">{{item.Major}}</strong>录取学生 &nbsp;&nbsp;
+                        <strong style="color: #AEC8F1">{{item.Round}}</strong>
+                        <div style="font-weight: bold">
+                            {{item.School}}
+                        </div>
+                    </div>
+                    <div class="grid_9" style="font: 20px arial; color: #24B85A">标化考试成绩:
+                        <br /> </div>
+                    <div style="font: 22px arial">
+                        <strong style="font-weight: bold">SAT: {{item.SAT}} &nbsp;&nbsp;
+                ACT: {{item.ACT}} &nbsp;&nbsp; TOEFL: {{item.TOEFL}} &nbsp;&nbsp; {{item.SAT2}} &nbsp;&nbsp; {{item.APALEVELIB}}<br/></strong>
+                        <strong style="font-weight: bold">活动：<strong>{{item.Activities}}</strong>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
     <div>
         <div><img src="../images/business.jpg"></div>
     </div>

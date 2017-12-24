@@ -6,6 +6,7 @@
 @import "./parallax.css";
 @import "./palette.css";
 @import "./table.css";
+@import "./widget.css";
 
 
 @font-face {
@@ -23,9 +24,7 @@ a {
     text-decoration: none;
 }
 
-p {
-
-}
+p {}
 
 figcaption {
     font-family: "Elephant";
@@ -35,16 +34,7 @@ figcaption {
     font-weight: lighter;
 }
 
-input[type=text] {
-    font-family: Roboto;
-    font-size: 80%;
-    border: 0px;
-        outline: none;
-        height: 20px;
-        background-color: transparent;
-        border-bottom: 2px solid #e1262a;
 
-}
 
 
 
@@ -130,7 +120,16 @@ input[type=text] {
 
 
 
+form {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-content: space-around;
+    align-items: center;
+    flex-direction: column;
+        font-size: 20px;
 
+}
 
 
 
@@ -139,6 +138,51 @@ input[type=text] {
 
 .bkg-index {
     background-image: url("../img/theme-index.jpg");
+}
+
+.bkg-milky-way {
+    color: white;
+    background: linear-gradient(-45deg, #EE7752, #f54b60, #9357a0, #5663ab, #23A6D5, #23D5AB);
+    background-size: 400% 400%;
+    -webkit-animation: milky-way 50s ease infinite;
+    -moz-animation: milky-way 50s ease infinite;
+    animation: milky-way 50s ease infinite;
+}
+
+@-webkit-keyframes milky-way {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-moz-keyframes milky-way {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes milky-way {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
 }
 
 .parallax-home button {
@@ -173,11 +217,11 @@ input[type=text] {
 
 
 
+
 /* Desktop styling */
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 800px) {}
 
-}
 
 
 
@@ -191,9 +235,8 @@ input[type=text] {
 
 /* Tablet styling */
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 800px) {}
 
-}
 
 
 
@@ -207,6 +250,4 @@ input[type=text] {
 
 /* Phone styling */
 
-@media only screen and (max-width: 400px) {
-
-}
+@media only screen and (max-width: 400px) {}

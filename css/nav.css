@@ -22,8 +22,7 @@
     -ms-user-select: none;
     /* Internet Explorer/Edge */
     user-select: none;
-    /* Non-prefixed version, currently
-                                  supported by Chrome and Opera */
+    /* Non-prefixed version, currently supported by Chrome and Opera */
 }
 
 .nav .menu {
@@ -59,7 +58,7 @@
     margin: 0px, 60px, 0px, 60px;
     padding: 0px, 0px, 0px, 0px;
     height: 100%;
-    width:100px;
+    width:300px;
 }
 
 .nav .logo a {
@@ -103,7 +102,7 @@
 }
 
 .nav li:hover {
-    border-bottom: 2px solid #ffa90f;
+    border-bottom: 7px solid #ffa90f;
 }
 
 .mobile-menu {
