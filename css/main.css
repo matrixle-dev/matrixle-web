@@ -20,9 +20,11 @@ body {
     font-family: sans-serif;
 }
 
-a {
+a:link,
+a:visited {
     text-decoration: none;
 }
+
 
 p {}
 
@@ -56,6 +58,10 @@ figcaption {
 
 .center-text {
     text-align: center;
+}
+
+.left-text {
+    text-align: left;
 }
 
 .restaurantspage {
