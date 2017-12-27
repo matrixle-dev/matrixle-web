@@ -1,9 +1,9 @@
 input[type=text] {
     color: white;
     font-family: Roboto;
-    font-size: 20px;
+    font-size: 15px;
     outline: none;
-    height: 40px;
+    height: 30px;
     background-color: #ffffff33;
     border-width: 0px;
     border-radius: 40px;
@@ -18,13 +18,13 @@ input[type=text]::placeholder {
 input[type=number] {
     color: white;
     font-family: Roboto;
-    font-size: 20px;
+    font-size: 15px;
     outline: none;
     height: 40px;
     background-color: #ffffff33;
     border-width: 0px;
-    border-radius: 40px;
-    padding: 5px 20px 5px 20px;
+    border-radius: 30px;
+    padding: 0px 20px 0px 20px;
 }
 
 input[type=number]::placeholder {
@@ -34,7 +34,7 @@ input[type=number]::placeholder {
 
 button {
 	font-family: Roboto;
-    font-size: 20px;
+    font-size: 15px;
     outline: none;
     height: 40px;
     border-width: 0px;
@@ -42,19 +42,19 @@ button {
     padding: 5px 20px 5px 20px;
 }
 
-.button {
+.glass-button {
     color: #ffffff;
     background-color: #ffffff00;
     transition: background-color 0.5s;
 }
 
-.button:hover {
+.glass-button:hover {
     color: #000000;
     mix-blend-mode: lighten;
 	background-color: #ffffffff;
 }
 
-.button-highlight {
+.glass-button-highlight {
     color: #ffffff;
     mix-blend-mode: lighten;
     overflow: hidden;
@@ -66,9 +66,33 @@ button {
 
 }
 
-.button-highlight:hover {
+.glass-button-highlight:hover {
 	color: #000000;
 	background-color: #ffffffff;
+}
+
+.blue-button {
+	font-size: 20px;
+	color: #019dde;
+	height: 150px;
+	width: 150px;
+	border-radius: 100px;
+	border-width: 10px;
+	border-color: #019dde;
+	border-style: solid;
+	background-color: #ffffff;
+	transition: background-color 0.5s;
+	transition: color 0.5s;
+	transition: border-width 0.5s;
+
+
+}
+
+.blue-button:hover {
+	color: white;
+	border-width: 0px;
+	border-color: white;
+	background-color: #019dde;
 }
 
 
