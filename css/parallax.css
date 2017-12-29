@@ -20,14 +20,14 @@
     color: white;
     font-family: 'Roboto';
     font-weight: lighter;
-    text-shadow: 0px 0px 10px #000000;
+    text-shadow: 0px 0px 40px #777777;
 }
 
 .parallax-section p {
     color: white;
     font-family: 'Roboto';
     font-weight: lighter;
-    text-shadow: 0px 0px 20px #000000;
+    /*text-shadow: 0px 0px 20px #ffffff;*/
     width: 70%;
 }
 
@@ -39,7 +39,7 @@
 @media only screen and (min-width: 800px) {
 
     .parallax-section h1 {
-        font-size: 55px;
+        font-size: 50px;
     }
 
     .parallax-section p {
@@ -55,7 +55,7 @@
 @media only screen and (max-width: 800px) {
 
     .parallax-section h1 {
-        font-size: 35px;
+        font-size: 30px;
     }
 
     .parallax-section p {
