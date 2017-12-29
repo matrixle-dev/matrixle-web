@@ -37,6 +37,9 @@ input[type=number]::placeholder {
     -webkit-backdrop-filter: blur(10px);
 }
 
+.avatar {
+	border-radius: 50%;
+}
 
 button {
     font-family: Roboto;

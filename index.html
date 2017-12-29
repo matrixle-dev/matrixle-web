@@ -6,6 +6,20 @@
     <link rel="stylesheet" type="text/css" href="./css/main.css">
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style type="text/css">
+    .bkg-emory {
+        background-image: url("./img/bkg-emory.jpg");
+    }
+    .bkg-nd {
+        background-image: url("./img/bkg-nd.jpg");
+    }
+    .bkg-hm {
+        background-image: url("./img/bkg-hm.jpeg");
+    }
+    .bkg-duke {
+        background-image: url("./img/bkg-duke.jpg");
+    }
+    </style>
 </head>
 
 <body>
@@ -23,7 +37,7 @@
     </nav>
     <div class="parallax-section bkg-index">
         <h1>乐析留学数据矩阵</h1>
-        <input type="text" class="search-bar" name="search" placeholder="Search.." >
+        <input type="text" class="search-bar" name="search" placeholder="Search..">
         <p class="center-text">乐析矩阵整合了留学生从准备留学到留学结束全过程的丰富数据，并根据学校排名等客观数据进行优化、根据查阅者数据进行个性定制，以求得出最客观、最合适的结论。</p>
     </div>
     <dir class="row-container">
@@ -40,37 +54,38 @@
     <div>
         <h3>最新申请案例</h3>
     </div>
-    <div>
-        <div>
-            <div>
-                <img src="./images/notredame.jpg" style="width:150px; height:150px;">
-            </div>
-            <div>
-                <div class="grid_10 lucky" style="font: 22px arial">2017<strong style="font-weight: bold; color: #2453B8">政治学</strong>录取学生 &nbsp;&nbsp;
-                    <strong style="color: #AEC8F1">REA</strong>
-                    <b>
-        University of Notre Dame  圣母大学
-       </b>
+    <div class="column-container">
+        <div class="card bkg-nd">
+            <div class="card-content">
+                <div>
+                    <img class="avatar" src="./img/icon-und.png">
                 </div>
-                <div class="grid_9" style="font: 20px arial; color: #24B85A">标化考试成绩:
-                    <br /> </div>
-                <div style="font: 22px arial">
-                    <strong style="font-weight: bold">SAT: -- &nbsp;&nbsp;
+                <div>
+                    <div class="grid_10 lucky" style="font: 22px arial"><strong style="color: #AEC8F1">REA</strong>
+                        <b>University of Notre Dame  圣母大学</b><br>2017<strong style="font-weight: bold; color: #ffffff">
+                        政治学</strong>录取学生 &nbsp;&nbsp;
+                    </div>
+                    <div class="grid_9" style="font: 20px arial; color: #24B85A">标化考试成绩:
+                        <br/>
+                    </div>
+                    <div style="font: 22px arial">
+                        <strong style="font-weight: bold">SAT: -- &nbsp;&nbsp;
                 ACT: 34 &nbsp;&nbsp; TOEFL: 111 &nbsp;&nbsp; IELTS: -- &nbsp;&nbsp; GPA: 91/100</strong>
+                    </div>
                 </div>
             </div>
         </div>
-        <div>
-            <div>
+        <div class="card bkg-emory">
+            <div class="card-content">
                 <div>
-                    <img src="./images/emory.jpg" style="width:150px; height:150px;">
+                    <img class="avatar" src="./img/icon-emory.jpg">
                 </div>
                 <div>
-                    <div class="grid_10 lucky" style="font: 22px arial">2017<strong style="font-weight: bold; color: #2453B8">未定</strong>录取学生 &nbsp;&nbsp;
-                        <strong style="color: #AEC8F1">ED2</strong>
+                    <div class="grid_10 lucky" style="font: 22px arial"><strong style="color: #AEC8F1">ED2</strong>
                         <b>
         Emory University 埃默里大学
        </b>
+                        <br>2017<strong style="font-weight: bold; color: #ffffff">未定</strong>录取学生 &nbsp;&nbsp;
                     </div>
                     <div class="grid_9" style="font: 20px arial; color: #24B85A">标化考试成绩:
                         <br /> </div>
@@ -80,62 +95,60 @@
                     </div>
                 </div>
             </div>
-            <div>
+        </div>
+        <div class="card bkg-hm">
+            <div class="card-content">
                 <div>
-                    <div>
-                        <img src="./images/hm.jpg" style="width:150px; height:150px;">
-                    </div>
-                    <div>
-                        <div class="grid_10 lucky" style="font: 22px arial">2017<strong style="font-weight: bold; color: #2453B8">数学</strong>录取学生 &nbsp;&nbsp;
-                            <strong style="color: #AEC8F1">RD</strong>
-                            <b>
-        Harvey Mudd College 哈维玛德学院
-       </b>
-                        </div>
-                        <div class="grid_9" style="font: 20px arial; color: #24B85A">标化考试成绩:
-                            <br /> </div>
-                        <div style="font: 22px arial">
-                            <strong style="font-weight: bold">（旧）SAT: 2390 &nbsp;&nbsp;
-                ACT:  -- &nbsp;&nbsp; TOEFL: -- &nbsp;&nbsp; IELTS: -- &nbsp;&nbsp; GPA: 全A</strong>
-                        </div>
-                    </div>
+                    <img class="avatar" src="./img/logo-hm.png">
                 </div>
                 <div>
-                    <div>
-                        <div>
-                            <img src="./images/duke.jpg" style="width:150px; height:150px;">
-                        </div>
-                        <div>
-                            <div class="grid_10 lucky" style="font: 22px arial">2017<strong style="font-weight: bold; color: #2453B8">统计学和经济学</strong>录取学生 &nbsp;&nbsp;
-                                <strong style="color: #AEC8F1">RD</strong>
-                                <b>
+                    <div class="grid_10 lucky" style="font: 22px arial"><strong style="color: #AEC8F1">RD</strong>
+                        <b>
+        Harvey Mudd College 哈维玛德学院
+       </b>
+                        <br>2017<strong style="font-weight: bold; color: #ffffff">数学</strong>录取学生 &nbsp;&nbsp;
+                    </div>
+                    <div class="grid_9" style="font: 20px arial; color: #24B85A">标化考试成绩:
+                        <br /> </div>
+                    <div style="font: 22px arial">
+                        <strong style="font-weight: bold">（旧）SAT: 2390 &nbsp;&nbsp;
+                ACT:  -- &nbsp;&nbsp; TOEFL: -- &nbsp;&nbsp; IELTS: -- &nbsp;&nbsp; GPA: 全A</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card bkg-duke">
+            <div class="card-content">
+                <div>
+                    <img class="avatar" src="./img/logo-duke.png">
+                </div>
+                <div>
+                    <div class="grid_10 lucky" style="font: 22px arial"><strong style="color: #AEC8F1">RD</strong>
+                        <b>
         Duke University 杜克大学
        </b>
-                            </div>
-                            <div class="grid_9" style="font: 20px arial; color: #24B85A">标化考试成绩:
-                                <br /> </div>
-                            <div style="font: 22px arial">
-                                <strong style="font-weight: bold">SAT: 1520&nbsp;&nbsp;
-                ACT: -- &nbsp;&nbsp; TOEFL: 111 &nbsp;&nbsp; IELTS: -- &nbsp;&nbsp; GPA: 4.59/4</strong>
-                            </div>
-                        </div>
+                        <br>2017<strong style="font-weight: bold; color: #ffffff">统计学和经济学</strong>录取学生 &nbsp;&nbsp;
                     </div>
-                    <div>
-                        <div><img src="./images/business.jpg"></div>
+                    <div class="grid_9" style="font: 20px arial; color: #24B85A">标化考试成绩:
+                        <br /> </div>
+                    <div style="font: 22px arial">
+                        <strong style="font-weight: bold">SAT: 1520&nbsp;&nbsp;
+                ACT: -- &nbsp;&nbsp; TOEFL: 111 &nbsp;&nbsp; IELTS: -- &nbsp;&nbsp; GPA: 4.59/4</strong>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
     <div class="footer">
         <div class="column-container">
             <h3 class="left-text material-icon">shopping_basket 产品</h3>
             <p class="left-text">
                 <a href="#">Matrixel 留学数据矩阵</a>
-                <br><br>
+                <br>
+                <br>
                 <a href="#">Matrixel 企业版</a>
-                <br><br>
+                <br>
+                <br>
                 <a href="#">Matrixel DL 深度学习框架</a>
             </p>
         </div>
@@ -143,9 +156,11 @@
             <h3 class="left-text material-icon">work 公司</h3>
             <p class="left-text">
                 <a href="#">关于我们</a>
-                <br><br>
+                <br>
+                <br>
                 <a href="#">加入我们</a>
-                <br><br>
+                <br>
+                <br>
                 <a href="#">合作伙伴</a>
             </p>
         </div>
@@ -153,9 +168,11 @@
             <h3 class="left-text material-icon">info 支持</h3>
             <p class="left-text">
                 <a href="#">反馈意见</a>
-                <br><br>
+                <br>
+                <br>
                 <a href="#">开发日志</a>
-                <br><br>
+                <br>
+                <br>
                 <a href="#">API 文档</a>
             </p>
         </div>
@@ -163,9 +180,11 @@
             <h3 class="left-text material-icon">perm_phone_msg 联系</h3>
             <p class="left-text">
                 <a href="#">+1 732-925-3684</a>
-                <br><br>
+                <br>
+                <br>
                 <a href="#">service@matrixel.com</a>
-                <br><br>
+                <br>
+                <br>
             </p>
         </div>
     </div>
