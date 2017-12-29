@@ -148,6 +148,8 @@ form.h1 {
 
 
 .bkg-index {
+    padding-top: 100px;
+    padding-bottom: 100px;
     background-image: url("../img/theme-index.jpg");
 }
 
@@ -233,7 +235,12 @@ form.h1 {
 
 /* Desktop styling */
 
-@media only screen and (min-width: 800px) {}
+@media only screen and (min-width: 800px) {
+    .bkg-index {
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
+}
 
 
 
@@ -248,7 +255,12 @@ form.h1 {
 
 /* Tablet styling */
 
-@media only screen and (max-width: 800px) {}
+@media only screen and (max-width: 800px) {
+    .bkg-index {
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+}
 
 
 
@@ -263,4 +275,9 @@ form.h1 {
 
 /* Phone styling */
 
-@media only screen and (max-width: 400px) {}
+@media only screen and (max-width: 400px) {
+    .bkg-index {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+}

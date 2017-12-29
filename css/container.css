@@ -37,6 +37,7 @@
     align-items: center;
     align-content: center;
     margin: 100px 50px 100px 50px;
+    flex-wrap: wrap;
 }
 
 .text-container {

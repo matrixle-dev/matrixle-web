@@ -31,9 +31,15 @@ input[type=number]::placeholder {
     color: #ffffff88;
 }
 
+.search-bar {
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
 
 button {
-	font-family: Roboto;
+    font-family: Roboto;
     font-size: 15px;
     outline: none;
     height: 40px;
@@ -51,7 +57,7 @@ button {
 .glass-button:hover {
     color: #000000;
     mix-blend-mode: lighten;
-	background-color: #ffffffff;
+    background-color: #ffffffff;
 }
 
 .glass-button-highlight {
@@ -63,36 +69,50 @@ button {
     border-style: solid;
     border-color: #ffffff;
     transition: background-color 0.5s;
-
 }
 
 .glass-button-highlight:hover {
-	color: #000000;
-	background-color: #ffffffff;
+    color: #000000;
+    background-color: #ffffffff;
 }
 
 .blue-button {
-	font-size: 20px;
-	color: #019dde;
-	height: 150px;
-	width: 150px;
-	border-radius: 100px;
-	border-width: 10px;
-	border-color: #019dde;
-	border-style: solid;
-	background-color: #ffffff;
-	transition: background-color 0.5s;
-	transition: color 0.5s;
-	transition: border-width 0.5s;
-
-
+    font-size: 20px;
+    color: #019dde;
+    height: 150px;
+    width: 150px;
+    border-radius: 100px;
+    border-width: 10px;
+    border-color: #019dde;
+    border-style: solid;
+    background-color: #ffffff;
+    transition: background-color 0.5s;
+    transition: color 0.5s;
+    transition: border-width 0.5s;
 }
 
 .blue-button:hover {
-	color: white;
-	border-width: 0px;
-	border-color: white;
-	background-color: #019dde;
+    color: white;
+    border-width: 0px;
+    border-color: white;
+    background-color: #019dde;
+}
+
+
+
+
+
+
+/* Desktop styling */
+
+@media only screen and (min-width: 800px) {
+    .search-bar {
+        font-size: 25px !important;
+
+        height: 55px !important;
+        width: 50% !important;
+        padding: 0px 30px 0px 30px !important;
+    }
 }
 
 
@@ -107,3 +127,40 @@ button {
 
 
 
+/* Tablet styling */
+
+@media only screen and (max-width: 800px) {
+	.search-bar {
+        font-size: 18px !important;
+
+        height: 45px !important;
+        width: 70% !important;
+        padding: 0px 20px 0px 20px !important;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Phone styling */
+
+@media only screen and (max-width: 400px) {
+	.search-bar {
+        font-size: 12px !important;
+
+        height: 30px !important;
+        width: 80% !important;
+        padding: 0px 20px 0px 20px !important;
+
+    }
+}
