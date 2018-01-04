@@ -96,6 +96,36 @@ button {
     background-color: #ffffffff;
 }
 
+
+.button {
+    color: #ffffff;
+    background-color: #6e7a8e;
+    transition: background-color 0.5s;
+}
+
+.button:hover {
+    color: #000000;
+    mix-blend-mode: lighten;
+    background-color: #ffffffff;
+}
+
+.button-highlight {
+    color: #ffffff;
+    mix-blend-mode: lighten;
+    overflow: hidden;
+    background-color: #6e7a8e;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #ffffff;
+    transition: background-color 0.5s;
+}
+
+.button-highlight:hover {
+    color: #000000;
+    background-color: #6e7a8e;
+}
+
+
 .blue-button {
     font-size: 20px;
     color: #019dde;
