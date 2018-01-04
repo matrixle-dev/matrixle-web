@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <nav class="nav">
+        <ul class="logo ripple">
+            <a href="index.html">
+                <img src="./img/logo.svg" height="50px">
+            </a>
+        </ul>
+        <ul class="menu">
+            <li class="ripple"><a href="#">关于我们</a></li>
+            <li class="ripple"><a href="#">登陆/注册</a></li>
+        </ul>
+        <ul class="menu-btn material-icon">menu</ul>
+    </nav>
+    <div class="column-container blue-black " style="background: #cccccc;">
+        <!--search boxes-->
+        <div>
+            <form>
+                <h2>Start Exploring Big Data</h2>
+                <br>
+                <br>
+                <input type="text" id="school" ng-model="globalSearch.School" placeholder="邮箱/用户名" />
+                <br>
+                <input type="password" id="major" ng-model="globalSearch.Major" placeholder="密码" />
+                <br>
+                <div>
+                    <button class="glass-button" ng-click="clearSearch()">找回密码</button>
+                    <button class="glass-button-highlight" ng-click="showResult()">登录</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--case list-->
+    <ul id="filterList" style="display:none">
+        <li ng-repeat="item in list | filter: globalSearch | filter:byRange('SAT', filterModelMin.SAT, filterModelMax.SAT) | filter:byRange('ACT', filterModelMin.ACT, filterModelMax.ACT) | filter: byRange('TOEFL', filterModelMin.TOEFL, filterModelMax.TOEFL)">
+            <div>
+                <div>
+                    <div class="grid_10 lucky" style="font: 22px arial">{{item.Year}}<strong style="font-weight: bold; color: #2453B8">{{item.Major}}</strong>录取学生 &nbsp;&nbsp;
+                        <strong style="color: #AEC8F1">{{item.Round}}</strong>
+                        <div style="font-weight: bold">
+                            {{item.School}}
+                        </div>
+                    </div>
+                    <div class="grid_9" style="font: 20px arial; color: #24B85A">标化考试成绩:
+                        <br /> </div>
+                    <div style="font: 22px arial">
+                        <strong style="font-weight: bold">SAT: {{item.SAT}} &nbsp;&nbsp;
+                ACT: {{item.ACT}} &nbsp;&nbsp; TOEFL: {{item.TOEFL}} &nbsp;&nbsp; {{item.SAT2}} &nbsp;&nbsp; {{item.APALEVELIB}}<br/></strong>
+                        <strong style="font-weight: bold">活动：<strong>{{item.Activities}}</strong>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+    <div class="copyright copyright-light copyright-fix">
+        <span>Made with <span style="color: #a7aec5;">♥</span> by Matrixel Web Team</span>
+        <span>©2017-2018 matrixel.com All Rights Reserved.</span>
+    </div>
+</body>
+
+</html>

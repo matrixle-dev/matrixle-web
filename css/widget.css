@@ -31,6 +31,22 @@ input[type=number]::placeholder {
     color: #ffffff88;
 }
 
+input[type=password] {
+    color: white;
+    font-family: Roboto;
+    font-size: 15px;
+    outline: none;
+    height: 40px;
+    background-color: #ffffff33;
+    border-width: 0px;
+    border-radius: 30px;
+    padding: 0px 20px 0px 20px;
+}
+
+input[type=password]::placeholder {
+    color: #ffffff88;
+}
+
 .search-bar {
     background-color: rgba(255, 255, 255, 0.4);
     backdrop-filter: blur(20px);
