@@ -51,11 +51,10 @@ input[type=password]::placeholder {
     background-color: rgba(255, 255, 255, 0.4);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(10px);
-
 }
 
 .avatar {
-	border-radius: 50%;
+    border-radius: 50%;
 }
 
 button {
@@ -98,31 +97,32 @@ button {
 
 
 .button {
-    color: #ffffff;
-    background-color: #6e7a8e;
-    transition: background-color 0.5s;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #ffffff;
+    color: #6e7a8e;
+    background-color: #ffffff;
+    transition: border-color 0.5s;
 }
 
 .button:hover {
-    color: #000000;
-    mix-blend-mode: lighten;
     background-color: #ffffffff;
+    border-color: #6e7a8e;
 }
 
 .button-highlight {
     color: #ffffff;
-    mix-blend-mode: lighten;
     overflow: hidden;
     background-color: #6e7a8e;
     border-width: 2px;
     border-style: solid;
-    border-color: #ffffff;
+    border-color: #6e7a8e;
     transition: background-color 0.5s;
 }
 
 .button-highlight:hover {
-    color: #000000;
-    background-color: #6e7a8e;
+    color: #6e7a8e;
+    background-color: #ffffff;
 }
 
 
@@ -153,6 +153,8 @@ button {
 
 
 
+
+
 /* Desktop styling */
 
 @media only screen and (min-width: 800px) {
@@ -177,18 +179,21 @@ button {
 
 
 
+
+
 /* Tablet styling */
 
 @media only screen and (max-width: 800px) {
-	.search-bar {
+    .search-bar {
         font-size: 18px !important;
 
         height: 45px !important;
         width: 70% !important;
         padding: 0px 20px 0px 20px !important;
-
     }
 }
+
+
 
 
 
@@ -205,12 +210,11 @@ button {
 /* Phone styling */
 
 @media only screen and (max-width: 400px) {
-	.search-bar {
+    .search-bar {
         font-size: 12px !important;
 
         height: 30px !important;
         width: 80% !important;
         padding: 0px 20px 0px 20px !important;
-
     }
 }
