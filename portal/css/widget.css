@@ -1,0 +1,14 @@
+
+/*palette*/
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --blue-grey: #aaaacc;
+  --blue-black: #6e7a8e;
+}
+
+
+
+.avatar {
+	border-radius: 50%;
+}
