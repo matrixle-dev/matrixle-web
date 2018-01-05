@@ -14,6 +14,10 @@ $(document).ready(function() {
             contentType: "application/json",
             success: function(data) {
                 console.log("Response " + data.accountSelected);
+            },
+            error: function( jqXhr, textStatus, errorThrown ){
+            	console.log( errorThrown );
+            	alert(textStatus + errorThrown);
             }
         });
     })
