@@ -1,26 +1,23 @@
 $(document).ready(function() {
     $("#login-btn").click(function() {
-    	//fake it till you make it.
-    	// account_name = $("#account").val();
-     //    password = $("#password").val();
-     //    if (account_name == "mofanlai" && password == "mofan123") {
-     //    	window.location = "portal.html"
-     //    }
-     //    else {
-     //    	$("#account").value = "";
-     //    	$("#password").value = "";
-     //    	alert("Authentication Failed, check your user name / password.");
-     //    }
+        account_name = $("#account").val();
+        password = $("#password").val();
+    	
+        //// fake it till you make it.
+        if (account_name == "mofanlai" && password == "mofan123") {
+        	window.location = "portal.html"
+        }
+        else {
+        	$("#account").value = "";
+        	$("#password").value = "";
+        	alert("Authentication Failed, check your user name / password.");
+        }
 
 
 
 
 
     	//Cross region request ERROR
-
-        account_name = $("#account").val();
-        password = $("#password").val();
-
         // $.get("login").done(function (data) {console.log(data);});
 
 

@@ -1,11 +1,26 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+/*@import url('https://fonts.googleapis.com/css?family=Roboto:300');*/
 
 @font-face {
   font-family: 'Material Icons';
   font-style: normal;
   font-weight: 400;
-  src: local('Material Icons'), local('MaterialIcons-Regular'), url(material_icon.ttf) format('truetype');
+  src: local('Material Icons'), local('MaterialIcons-Regular'), url(../font/material_icon.ttf) format('truetype');
 }
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'), url(../font/roboto_light.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Fangzheng';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Fangzheng'), local('Fangzheng'), url(../font/方正正纤黑简体.ttf) format('truetype');
+}
+
 
 /*Material Icon*/
 
@@ -14,9 +29,6 @@
     font-family: "Material Icons";
 }
 
-
-
-/*Material Design Styled Ripple Animation - Han Zheng*/
 
 .ripple {
     position: relative;
