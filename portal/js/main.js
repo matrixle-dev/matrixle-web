@@ -1,7 +1,7 @@
 $(document).ready(function() {
-	$("#work-space").load("http://127.0.0.1/portal/dashboard.html");
+	$("#work-space").load("http://timzh.me/portal/dashboard.html");
     $("#menu-dashboard").bind("click", () => {
-    	$("#work-space").load("http://127.0.0.1/portal/dashboard.html");
+    	$("#work-space").load("http://timzh.me/portal/dashboard.html");
     });
     $("#menu-students").bind("click", () => {
     });
