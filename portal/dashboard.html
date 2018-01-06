@@ -1,0 +1,17 @@
+<div class="">
+    <div>工作进度</div>
+    <canvas id="work-progress-chart" style="display: block; max-width: 60%;"></canvas>
+    <script type="text/javascript">
+    var work_progress_chart = new Chart(document.getElementById("work-progress-chart"), {
+        "type": "doughnut",
+        "data": {
+            "labels": ["文书批改", "申请提交", "升学规划"],
+            "datasets": [{
+                "label": "任务分布图",
+                "data": [5, 2, 4    ],
+                "backgroundColor": ["rgb(255, 99, 132)", "rgb(54, 162, 235)", "rgb(255, 205, 86)"]
+            }]
+        }
+    });
+    </script>
+</div>
