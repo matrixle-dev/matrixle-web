@@ -5,7 +5,7 @@ $(document).ready(function() {
     	
         //// fake it till you make it.
         if (account_name == "mofanlai" && password == "mofan123") {
-        	window.location = "portal.html"
+        	window.location = "./portal/portal.html"
         }
         else {
         	$("#account").value = "";
