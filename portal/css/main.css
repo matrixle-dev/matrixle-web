@@ -38,6 +38,7 @@ body {
 }
 
 #menu {
+    min-width: 250px;
     width: 20%;
     height: 100%;
     display: flex;
@@ -100,10 +101,11 @@ body {
     width: 100%;
     padding: 14px 0px 14px 100px;
     transition: color 0.3s;
+    transition: border-left 0.5s;
 }
 
 .menu-list-item:hover {
-	font-weight: bold;
+    border-left: 5px #ffffff00 solid;
     color: #ffffff;
     background-color: #565565;
 }
