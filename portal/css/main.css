@@ -16,10 +16,11 @@
     --white: #ffffff;
     --menu: #2c2b2d;
     --blue: #51a4f5;
-    --blue-grey: #aaaacc;
+    --blue-grey: #aabbcc;
     --blue-black: #6e7a8e;
     --red: #f3537c;
     --yellow: #ffba2b;
+    --green: #7dbd42;
     --purple: #9e6ee8;
     --purple-grey: #aaa6d0;
     --purple-grey-dark: #363545;
@@ -38,6 +39,12 @@ body {
 body {
     display: flex;
     flex-direction: row;
+}
+
+hr {
+    color: var(--purple-grey);
+    border-style: solid;
+    border-width: 0.5px;
 }
 
 #menu {
@@ -126,4 +133,42 @@ body {
     align-content: flex-start;
 }
 
-#drawer {}
+.title-1{
+    font-size: 20px;
+}
+
+.content{
+    margin: 50px;
+}
+
+#drawer {
+        min-width: 250px;
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    align-content: space-between;
+    color: var(--purple-grey);
+    overflow: scroll;
+    background-color: var(--green);
+    border-left: 2px #6dad32 solid;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
