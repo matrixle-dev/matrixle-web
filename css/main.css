@@ -133,8 +133,7 @@ form {
     align-content: space-around;
     align-items: center;
     flex-direction: column;
-        font-size: 20px;
-
+    font-size: 20px;
 }
 
 form.h1 {
@@ -155,12 +154,12 @@ form.h1 {
 
 .bkg-milky-way {
     color: white;
-    background: linear-gradient(-45deg, #EE7752, #f54b60, #9357a0, #5663ab, #23A6D5, #23D5AB);
+    background: linear-gradient(-45deg, #23D5AB, #23A6D5, #5663ab, #9357a0, #f54b60, #EE7752);
     background-size: 400% 400%;
-    -webkit-animation: milky-way 60s steps(150) infinite;
-    -moz-animation: milky-way 60s steps(150) infinite;
-    animation: milky-way 60s steps(150) infinite;
-    
+    -webkit-animation: milky-way 40s steps(130) infinite;
+    -moz-animation: milky-way 40s steps(130) infinite;
+    animation: milky-way 40s steps(130) infinite;
+
     box-shadow: 0px 20px 20px -20px #00000099 inset;
 }
 
@@ -235,14 +234,16 @@ form.h1 {
 
 
 
+
 /* Desktop styling */
 
 @media only screen and (min-width: 800px) {
     .bkg-index {
-    padding-top: 100px;
-    padding-bottom: 70px;
+        padding-top: 100px;
+        padding-bottom: 70px;
+    }
 }
-}
+
 
 
 
@@ -259,10 +260,11 @@ form.h1 {
 
 @media only screen and (max-width: 800px) {
     .bkg-index {
-    padding-top: 50px;
-    padding-bottom: 70px;
+        padding-top: 50px;
+        padding-bottom: 70px;
+    }
 }
-}
+
 
 
 
@@ -279,7 +281,7 @@ form.h1 {
 
 @media only screen and (max-width: 400px) {
     .bkg-index {
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
 }
