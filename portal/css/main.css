@@ -51,11 +51,11 @@ hr {
     min-width: 250px;
     width: 20%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
+    display: block;
+/*    flex-direction: column;
     align-items: center;
     align-content: center;
-    align-content: space-between;
+    align-content: space-between;*/
     color: var(--purple-grey);
     overflow: scroll;
     border-right: 2px #fafafa solid;
@@ -121,16 +121,18 @@ hr {
 }
 
 #work-space {
-
     font-weight: lighter;
     width: 100%;
     padding: 30px 40px 30px 40px;
     overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+        display: block;
 
-    display: flex;
+
+/*    display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-content: flex-start;
+    align-content: flex-start;*/
 }
 
 .title-1{
@@ -138,7 +140,10 @@ hr {
 }
 
 .content{
-    margin: 50px;
+    border-radius: 10px;
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
 }
 
 #drawer {
@@ -154,6 +159,10 @@ hr {
     overflow: scroll;
     background-color: var(--green);
     border-left: 2px #6dad32 solid;
+}
+
+.drawer-content {
+    margin: 10px;
 }
 
 
