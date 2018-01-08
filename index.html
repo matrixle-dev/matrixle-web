@@ -26,6 +26,12 @@
     .bkg-index1 {
         background-image: url("./img/bkg-index1.png");
     }
+    
+    /* For auto complete  */
+    .autocomplete-suggestions { border: 1px solid #999; background: #FFF; overflow: auto; }
+	.autocomplete-suggestion { padding: 2px 5px; white-space: nowrap; overflow: hidden; }
+	.autocomplete-selected { background: #F0F0F0; }
+	.autocomplete-suggestions strong { font-weight: normal; color: #3399FF; }
     </style>
 </head>
 
@@ -44,7 +50,7 @@
     </nav>
     <div class="parallax-section bkg-index">
         <h1>乐析留学数据矩阵</h1>
-        <input type="text" class="search-bar glass-input-text" name="search" placeholder="Search..">
+        <input type="text" class="search-bar glass-input-text" id="autocomplete" name="search" placeholder="Search..">
         <p class="center-text">乐析矩阵整合了留学生从准备留学到留学结束全过程的丰富数据，并根据学校排名等客观数据进行优化、根据查阅者数据进行个性定制，以求得出最客观、最合适的结论。</p>
     </div>
     <dir class="row-container" style="background-color: #282c34">
@@ -207,6 +213,24 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
     <script type="text/javascript" src="./js/main.js"></script>
+    
+    <!-- For auto complete -->
+    <script type="text/javascript" src="./autocomplete.js"></script>
+    <script>
+var countries = [
+   { value: '杜克大学', data: 'Duke' },
+   // ... insert more data here
+   { value: '约翰霍普金斯大学', data: 'Johns Hopkins' }
+];
+ 
+$('#autocomplete').autocomplete({
+    lookup: countries,
+    onSelect: function (suggestion) {
+        alert('You selected: ' + suggestion.value + ', ' + suggestion.data);
+    }
+});
+
+    </script>
 </body>
 
 </html>
