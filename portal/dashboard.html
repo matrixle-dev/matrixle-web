@@ -1,22 +1,32 @@
 <div class="">
     <div class="title-1">工作进度</div>
     <div class="content">
-        <canvas id="work-progress-chart" style="display: block; width: 100%;"></canvas>
+        <canvas id="work-progress-chart" style="display: block; height: 100%;"></canvas>
     </div>
-
     <div class="title-1">备忘</div>
     <div class="content"></div>
     <script type="text/javascript">
     var work_progress_chart = new Chart(document.getElementById("work-progress-chart"), {
-        "type": "doughnut",
+        "type": "polarArea",
         "data": {
             "labels": ["文书批改", "申请提交", "升学规划"],
             "datasets": [{
                 "label": "任务分布图",
-                "data": [5, 2, 4],
+                "data": [5, 4, 2],
                 "backgroundColor": ["rgb(255, 99, 132)", "rgb(54, 162, 235)", "rgb(255, 205, 86)"]
             }]
         }
     });
+    // var work_progress_chart = new Chart(document.getElementById("work-progress-chart"), {
+    //     "type": "doughnut",
+    //     "data": {
+    //         "labels": ["文书批改", "申请提交", "升学规划"],
+    //         "datasets": [{
+    //             "label": "任务分布图",
+    //             "data": [5, 2, 4],
+    //             "backgroundColor": ["rgb(255, 99, 132)", "rgb(54, 162, 235)", "rgb(255, 205, 86)"]
+    //         }]
+    //     }
+    // });
     </script>
 </div>

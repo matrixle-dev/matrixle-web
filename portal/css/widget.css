@@ -9,7 +9,9 @@
 
 input[type=text] {
     color: white;
-    font-family: Roboto;
+    /*font-family: Roboto;*/
+    font-family: inherit;
+
     font-size: 15px;
     outline: none;
     height: 30px;

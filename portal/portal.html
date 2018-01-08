@@ -5,6 +5,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
+
 </head>
 
 <body>
@@ -25,8 +27,52 @@
     </div>
     <div id="work-space"></div>
     <div id="drawer">
-        <div class="drawer-content">
-        <input type="text" class="search-bar glass-input-text" name="search" placeholder="院校快速搜索...">
+        <!-- <input type="text" class="search-bar glass-input-text" name="search" placeholder="院校快速搜索..."> -->
+        <div class="drawer-content" ng-app="List">
+            <div ng-controller="CaseController">
+                <form>
+                    <div>
+                        <input type="text" id="school" ng-model="globalSearch.School" placeholder="院校快速搜索...">
+<!--                         <input type="text" id="school" ng-model="globalSearch.School" placeholder="学校" />
+                        <input type="text" id="major" ng-model="globalSearch.Major" placeholder="专业" /> -->
+                    </div>
+                    <br>
+                    <div>
+                        <div>
+                            <button class="glass-button" ng-click="clearSearch()">清空</button>
+                            <button class="glass-button-highlight" ng-click="showResult()">搜索</button>
+                        </div>
+                    </div>
+                </form>
+                <!--case list-->
+                <div id="list-div" style="margin: 0px;padding:0px;">
+                <ul id="filterList" style="display:none;  display: flex; justify-content: center; flex-direction: column; padding-top: 10px;padding-bottom: 10px;">
+                    <li  style="list-style: none; width: 100%; display: flex; align-self: center;" ng-repeat="item in list | filter: globalSearch | filter:byRange('SAT', filterModelMin.SAT, filterModelMax.SAT) | filter:byRange('ACT', filterModelMin.ACT, filterModelMax.ACT) | filter: byRange('TOEFL', filterModelMin.TOEFL, filterModelMax.TOEFL)">
+                        <div class="card bkg-hm">
+                            <div class="card-content" style="background-color: #4f4e5c">
+<!--                                 <div>
+                                    <img class="avatar" src="./img/logo-hm.png">
+                                </div> -->
+                                <div>
+                                    <div class="grid_10 lucky" style="font: 22px arial"><strong style="color: #AEC8F1">{{item.Round}}</strong>
+                                        <b>{{item.School}}</b>
+                                        <br>{{item.Year}}<strong style="font-weight: bold; color: #ffffff">{{item.Major}}</strong>录取学生 &nbsp;&nbsp;
+                                    </div>
+                                    <div class="grid_9" style="font: 20px arial; color: #ffffff">标化考试成绩:
+                                        <br /> </div>
+                                    <div style="font: 22px arial">
+                                        <strong style="font-weight: bold">SAT: {{item.SAT}} &nbsp;&nbsp;
+                ACT: {{item.ACT}} &nbsp;&nbsp; TOEFL: {{item.TOEFL}} &nbsp;&nbsp; {{item.SAT2}} &nbsp;&nbsp; {{item.APALEVELIB}}</strong>
+                                    </div>
+                                    <div>{{item.Activities}}</div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </div>
     </div>
     </div>
 </body>
@@ -34,5 +80,8 @@
 <script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="./js/Chart.min.js"></script>
 <script type="text/javascript" src="./js/main.js"></script>
+<script type="text/javascript" src="../js/case.js"></script>
+<script type="text/javascript" src="../js/CaseController.js"></script>
+
 
 </html>
