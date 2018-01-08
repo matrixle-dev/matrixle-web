@@ -60,7 +60,7 @@
                     </div>
                 </form>
                 <!--case list-->
-                <dir style="background-color: white;">
+                <div id="list-div" style="background-color: white; display: none;">
                 <ul id="filterList" style="display:none;  display: flex; justify-content: center; flex-direction: column; padding-top: 50px;padding-bottom: 50px;">
                     <li  style="list-style: none; width: 80%; display: flex; align-self: center;" ng-repeat="item in list | filter: globalSearch | filter:byRange('SAT', filterModelMin.SAT, filterModelMax.SAT) | filter:byRange('ACT', filterModelMin.ACT, filterModelMax.ACT) | filter: byRange('TOEFL', filterModelMin.TOEFL, filterModelMax.TOEFL)">
                         <div class="card bkg-hm">
@@ -85,7 +85,7 @@
                         </div>
                     </li>
                 </ul>
-                </dir>
+                </div>
             </div>
         </div>
     </div>
