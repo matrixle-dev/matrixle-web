@@ -226,7 +226,7 @@ var countries = [
 $('#autocomplete').autocomplete({
     lookup: countries,
     onSelect: function (suggestion) {
-        alert('You selected: ' + suggestion.value + ', ' + suggestion.data);
+        alert('You selected: ' + suggestion.value); // change to submit logic
     }
 });
 
