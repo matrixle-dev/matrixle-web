@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+</head>
+
+<body>
+    <nav class="nav">
+        <ul class="logo ripple">
+            <a href="index.html">
+                <img src="img/logo.svg" height="50px">
+            </a>
+        </ul>
+        <ul class="menu">
+            <li class="ripple"><a href="#">关于我们</a></li>
+            <li class="ripple"><a href="login.html">登陆/注册</a></li>
+        </ul>
+        <ul class="menu-btn material-icon">menu</ul>
+    </nav>
+    <div class="column-container bkg-milky-way">
+        <div ng-app="List">
+            <div ng-controller="SchoolController">
+                <form>
+                    <div>
+                        <input type="text" id="school" ng-model="globalSearch.chinese_name" placeholder="学校名字" />
+                      
+                    </div>
+                    <br>
+                     
+                 
+                        <div>
+                            <button class="glass-button" ng-click="clearSearch()">清空</button>
+                            <button class="glass-button-highlight" ng-click="showResult()">搜索</button>
+                        </div>
+                    
+                </form>
+                <!--case list-->
+                <div id="list-div" style="display: none;">
+                <ul id="filterList" style="display:block;  display: flex; justify-content: center; flex-direction: column; padding-top: 50px;padding-bottom: 50px;">
+                    <li  style="list-style: none; width: 80%; display: flex; align-self: center;" ng-repeat="item in list | filter: globalSearch">
+                        <div class="card bkg-hm">
+                           
+                              
+                    <p>{{item.chinese_name[0]}}</p> 
+                    <p style="font-size: 18px">{{item.english_name[0]}}</p>
+                <ul>    
+                <li> <a>地点：{{item.location[0]}}  </li>     
+                 <li> <a>学校网址：{{item.website[0]}}  </li>          
+                <li>  
+                 <ul>
+                <li>{{item.data[0]}}</li>
+                      <li>{{item.data[1]}}</li> 
+                      <li>{{item.data[2]}}</li> 
+                       <li>{{item.data[3]}}</li>                    
+                        <li>{{item.data[4]}}</li> 
+                      </ul>
+                        </li>
+                 <li>{{item.des[0]}} </li>
+
+
+                </ul>
+                        </div>
+                    </li>
+                </ul>
+                
+
+            </div>
+        </div>
+    </div>
+ </div>
+    <div class="footer">
+        <div class="column-container">
+            <h3 class="left-text material-icon">shopping_basket 产品</h3>
+            <p class="left-text">
+                <a href="#">Matrixle 留学数据矩阵</a>
+                <br>
+                <br>
+                <a href="#">Matrixle 企业版</a>
+                <br>
+                <br>
+                <a href="#">Matrixle DL 深度学习框架</a>
+            </p>
+        </div>
+        <div class="column-container">
+            <h3 class="left-text material-icon">work 公司</h3>
+            <p class="left-text">
+                <a href="#">关于我们</a>
+                <br>
+                <br>
+                <a href="#">加入我们</a>
+                <br>
+                <br>
+                <a href="#">合作伙伴</a>
+            </p>
+        </div>
+        <div class="column-container">
+            <h3 class="left-text material-icon">info 支持</h3>
+            <p class="left-text">
+                <a href="#">反馈意见</a>
+                <br>
+                <br>
+                <a href="#">开发日志</a>
+                <br>
+                <br>
+                <a href="#">API 文档</a>
+            </p>
+        </div>
+        <div class="column-container">
+            <h3 class="left-text material-icon">perm_phone_msg 联系</h3>
+            <p class="left-text">
+                <a href="#">+1 732-925-3684</a>
+                <br>
+                <br>
+                <a href="#">service@Matrixle.com</a>
+                <br>
+                <br>
+            </p>
+        </div>
+    </div>
+    <div class="copyright">
+        <span>Made with <span style="color: #a7aec5;">♥</span> by Matrixle Web Team</span>
+        <span>©2017-2018 Matrixle.com All Rights Reserved.</span>
+    </div>
+     <script src="./js/angular.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script src="school.js"></script>
+    <script src="SchoolController.js"></script>
+</body>
+
+</html>
