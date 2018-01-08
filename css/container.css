@@ -35,7 +35,8 @@
     flex-direction: row;
     align-items: center;
     align-content: center;
-    margin: 100px 50px 100px 50px;
+    padding: 100px 50px 100px 50px;
+    margin: 0px;
     flex-wrap: wrap;
 }
 

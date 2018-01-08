@@ -128,14 +128,14 @@ button {
 
 .blue-button {
     font-size: 20px;
-    color: #019dde;
+    color: #ffffff;
     height: 150px;
     width: 150px;
     border-radius: 100px;
     border-width: 10px;
-    border-color: #019dde;
+    border-color: #dd006f;
     border-style: solid;
-    background-color: #ffffff;
+    background-color: #f85181;
     transition: background-color 0.5s;
     transition: color 0.5s;
     transition: border-width 0.5s;
@@ -144,8 +144,8 @@ button {
 .blue-button:hover {
     color: white;
     border-width: 0px;
-    border-color: white;
-    background-color: #019dde;
+    border-color: #f85181;
+    background-color: #dd006f;
 }
 
 
