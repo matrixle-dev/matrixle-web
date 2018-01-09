@@ -22,7 +22,7 @@
         </ul>
         <ul class="menu-btn material-icon">menu</ul>
     </nav>
-    <div class="column-container bkg-milky-way">
+    <div class="column-container bkg-milky-way" style="padding-left: 0px;padding-right: 0px;">
         <div ng-app="List">
             <div ng-controller="CaseController">
                 <form>
@@ -60,13 +60,13 @@
                     </div>
                 </form>
                 <!--case list-->
-                <div id="list-div" style="background-color: white; display: none;">
-                <ul id="filterList" style="display:none;  display: flex; justify-content: center; flex-direction: column; padding-top: 50px;padding-bottom: 50px;">
+                <div id="list-div" style="background-color: transparent; display: none; width: 100%; margin: 0px;">
+                <ul id="filterList" style="display:none;  display: flex; justify-content: center; flex-direction: column; padding-top: 50px;padding-bottom: 50px; width: 100%; margin: 0px;">
                     <li  style="list-style: none; width: 80%; display: flex; align-self: center;" ng-repeat="item in list | filter: globalSearch | filter:byRange('SAT', filterModelMin.SAT, filterModelMax.SAT) | filter:byRange('ACT', filterModelMin.ACT, filterModelMax.ACT) | filter: byRange('TOEFL', filterModelMin.TOEFL, filterModelMax.TOEFL)">
-                        <div class="card bkg-hm">
-                            <div class="card-content" style="background-color: #4f4e5c">
+                        <div class="card bkg-hm " style="background-color: transparent;">
+                            <div class="card-content" style="background-color: #ffffff22">
 <!--                                 <div>
-                                    <img class="avatar" src="./img/logo-hm.png">
+                                    <img class="avatar" src="./img/logo-hm.png"4f4e5c>
                                 </div> -->
                                 <div>
                                     <div class="grid_10 lucky" style="font: 22px arial"><strong style="color: #AEC8F1">{{item.Round}}</strong>

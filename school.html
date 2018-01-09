@@ -22,14 +22,17 @@
         </ul>
         <ul class="menu-btn material-icon">menu</ul>
     </nav>
-    <div class="column-container bkg-milky-way">
+    <div class="column-container bkg-milky-way" style="min-height: 200px;">
         <div ng-app="List">
             <div ng-controller="SchoolController">
-                <form>
-                    <div>
-                        <input type="text" id="school" ng-model="globalSearch.chinese_name" placeholder="学校名字" />
+                <form style="width: 600px;">
+                    <div style="display: flex; align-content: center;align-items: center; justify-content: center; width: 100%;">
+                        <input type="text" style="display: flex; align-self: center; margin: 0px; width: 250px;" class="search-bar glass-input-text" id="school" ng-model="globalSearch.chinese_name" placeholder="学校名字" />
                       
                     </div>
+                    <br>
+                    <br>
+                    <br>
                     <br>
                      
                  
