@@ -135,7 +135,7 @@ button {
     border-width: 10px;
     border-color: #dd006f;
     border-style: solid;
-    background-color: #f85181;
+    background-color: #f44c7c;
     transition: background-color 0.5s;
     transition: color 0.5s;
     transition: border-width 0.5s;
@@ -144,7 +144,7 @@ button {
 .blue-button:hover {
     color: white;
     border-width: 0px;
-    border-color: #f85181;
+    border-color: #f44c7c;
     background-color: #dd006f;
 }
 
