@@ -7,6 +7,43 @@
     <link rel="stylesheet" type="text/css" href="./css/main.css">
     <script src="../js/angular.min.js"></script>
 
+    <style type="text/css">
+    button {
+    font-family: Roboto;
+    font-size: 12px;
+    outline: none;
+    height: 24px;
+    border-width: 0px;
+    border-radius: 15px;
+    padding: 2px 10px 2px 10px;
+        cursor: pointer;
+
+}
+        .glass-button {
+    color: #ffffff;
+    background-color: #ffffff00;
+    transition: background-color 0.5s;
+}
+
+.glass-button:hover {
+    background-color: #6dad32;
+}
+.glass-button-highlight {
+    color: #ffffff;
+    overflow: hidden;
+    background-color: #6dad32;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #6dad32;
+    transition: background-color 0.5s;
+}
+
+.glass-button-highlight:hover {
+    color: #ffffff;
+}
+
+    </style>
+
 </head>
 
 <body>
@@ -36,10 +73,9 @@
 <!--                         <input type="text" id="school" ng-model="globalSearch.School" placeholder="学校" />
                         <input type="text" id="major" ng-model="globalSearch.Major" placeholder="专业" /> -->
                     </div>
-                    <br>
-                    <div>
+                    <div style="padding-top: 10px;">
                         <div>
-                            <button class="button" ng-click="clearSearch()">清空</button>
+                            <button class="glass-button" ng-click="clearSearch()">清空</button>
                             <button class="glass-button-highlight" ng-click="showResult()">搜索</button>
                         </div>
                     </div>
