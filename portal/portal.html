@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="./css/main.css">
-    <script src="./js/angular.min.js"></script>
+    <script src="../js/angular.min.js"></script>
 
 </head>
 
@@ -45,7 +45,7 @@
                     </div>
                 </form>
                 <!--case list-->
-                <div id="list-div" style="margin: 0px;padding:0px;">
+                <div id="list-div" style="margin: 0px;padding:0px; display: none;">
                 <ul id="filterList" style="display:none;  display: flex; justify-content: center; flex-direction: column; padding-top: 10px;padding-bottom: 10px;">
                     <li  style="list-style: none; width: 100%; display: flex; align-self: center;" ng-repeat="item in list | filter: globalSearch | filter:byRange('SAT', filterModelMin.SAT, filterModelMax.SAT) | filter:byRange('ACT', filterModelMin.ACT, filterModelMax.ACT) | filter: byRange('TOEFL', filterModelMin.TOEFL, filterModelMax.TOEFL)">
                         <div class="card bkg-hm">
