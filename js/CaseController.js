@@ -16,14 +16,14 @@ app.controller('CaseController', function($scope, $http) {
             $scope.filterModelMin.TOEFL = '';
             $scope.filterModelMax.TOEFL = '';
 
-            document.getElementById('list-div').style.display = "none";
-
+            document.getElementById('list-div').style.visibility = "hidden";
+             location.reload()
 
         }
 
         $scope.showResult = function() {
           console.log('showResult');
-          document.getElementById('list-div').style.display = "block";
+          document.getElementById('list-div').style.visibility = "visible";
         }
 
 

@@ -39,13 +39,13 @@
                     <br>
                     <div>
                         <div>
-                            <button class="glass-button" ng-click="clearSearch()">清空</button>
+                            <button class="button" ng-click="clearSearch()">清空</button>
                             <button class="glass-button-highlight" ng-click="showResult()">搜索</button>
                         </div>
                     </div>
                 </form>
                 <!--case list-->
-                <div id="list-div" style="margin: 0px;padding:0px; display: none;">
+                <div id="list-div" style="margin: 0px;padding:0px; visibility: hidden;">
                 <ul id="filterList" style="display: flex; justify-content: center; flex-direction: column; padding-top: 10px;padding-bottom: 10px; padding-left: 0px; margin: 0px;">
                     <li  style="list-style: none; /*width: 100%;*/ display: flex; align-self: center;" ng-repeat="item in list | filter: globalSearch | filter:byRange('SAT', filterModelMin.SAT, filterModelMax.SAT) | filter:byRange('ACT', filterModelMin.ACT, filterModelMax.ACT) | filter: byRange('TOEFL', filterModelMin.TOEFL, filterModelMax.TOEFL)">
                         <div class="card-small bkg-hm">
