@@ -159,7 +159,38 @@
     margin: 10px 30px 10px 20px;
 }
 
+.card-small {
+    border-radius: 10px;
 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 3px;
+}
+
+.card-small-content {
+    color: #ffffff;
+    border-radius: 10px;
+
+    position: relative;
+    font-size: 14px;
+    padding: 5px;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.2);
+
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+
+    padding: 20px;
+
+        display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    /*margin: 100px 50px 100px 50px;*/
+    flex-wrap: wrap;
+}
 
 
 

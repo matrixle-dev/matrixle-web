@@ -46,25 +46,24 @@
                 </form>
                 <!--case list-->
                 <div id="list-div" style="margin: 0px;padding:0px; display: none;">
-                <ul id="filterList" style="display:none;  display: flex; justify-content: center; flex-direction: column; padding-top: 10px;padding-bottom: 10px;">
-                    <li  style="list-style: none; width: 100%; display: flex; align-self: center;" ng-repeat="item in list | filter: globalSearch | filter:byRange('SAT', filterModelMin.SAT, filterModelMax.SAT) | filter:byRange('ACT', filterModelMin.ACT, filterModelMax.ACT) | filter: byRange('TOEFL', filterModelMin.TOEFL, filterModelMax.TOEFL)">
-                        <div class="card bkg-hm">
-                            <div class="card-content" style="background-color: #4f4e5c">
+                <ul id="filterList" style="display: flex; justify-content: center; flex-direction: column; padding-top: 10px;padding-bottom: 10px; padding-left: 0px; margin: 0px;">
+                    <li  style="list-style: none; /*width: 100%;*/ display: flex; align-self: center;" ng-repeat="item in list | filter: globalSearch | filter:byRange('SAT', filterModelMin.SAT, filterModelMax.SAT) | filter:byRange('ACT', filterModelMin.ACT, filterModelMax.ACT) | filter: byRange('TOEFL', filterModelMin.TOEFL, filterModelMax.TOEFL)">
+                        <div class="card-small bkg-hm">
+                            <div class="card-small-content" style="background-color: #4f4e5c">
 <!--                                 <div>
                                     <img class="avatar" src="./img/logo-hm.png">
                                 </div> -->
                                 <div>
-                                    <div class="grid_10 lucky" style="font: 22px arial"><strong style="color: #AEC8F1">{{item.Round}}</strong>
+                                    <div class="grid_10 lucky" style="font: 15px arial"><strong style="color: #AEC8F1">{{item.Round}}</strong>
                                         <b>{{item.School}}</b>
                                         <br>{{item.Year}}<strong style="font-weight: bold; color: #ffffff">{{item.Major}}</strong>录取学生 &nbsp;&nbsp;
                                     </div>
-                                    <div class="grid_9" style="font: 20px arial; color: #ffffff">标化考试成绩:
+                                    <div class="grid_9" style="font: 14px arial; color: #ffffff">标化考试成绩:
                                         <br /> </div>
-                                    <div style="font: 22px arial">
-                                        <strong style="font-weight: bold">SAT: {{item.SAT}} &nbsp;&nbsp;
-                ACT: {{item.ACT}} &nbsp;&nbsp; TOEFL: {{item.TOEFL}} &nbsp;&nbsp; {{item.SAT2}} &nbsp;&nbsp; {{item.APALEVELIB}}</strong>
+                                    <div style="font: 15px arial">
+                                        <strong style="font-weight: bold">SAT: {{item.SAT}} &nbsp;&nbsp;<br>
+                ACT: {{item.ACT}} &nbsp;&nbsp; <br>TOEFL: {{item.TOEFL}} &nbsp;&nbsp; <br>{{item.SAT2}} &nbsp;&nbsp;<br> {{item.APALEVELIB}}</strong>
                                     </div>
-                                    <div>{{item.Activities}}</div>
                                 </div>
                             </div>
                         </div>
