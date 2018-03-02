@@ -1,5 +1,5 @@
 app.controller('CaseController', function($scope, $http) {
-    $http.get('http://timzh.me/js/matrixle_database.json').then(function(res) {
+    $http.get('https://matrixle.com/js/matrixle_database.json').then(function(res) {
         $scope.list = res.data;
 
         $scope.globalSearch = {};

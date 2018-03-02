@@ -1,7 +1,7 @@
 $(document).ready(function() {
     $("#work-space").load("https://matrixle.com/portal/dashboard.html");
     $("#menu-dashboard").bind("click", () => {
-        $("#work-space").load("https://matrixle.com/portal/dashboard.html"); //http://timzh.me/portal/
+        $("#work-space").load("https://matrixle.com/portal/dashboard.html"); 
     });
     $("#menu-students").bind("click", () => {
         var myUrl = "search/";
@@ -40,7 +40,7 @@ $(document).ready(function() {
         });
     });
     $("#menu-checklist").bind("click", () => {
-        var myUrl = "http://timzh.me:4444";
+        var myUrl = "http://matrixle.com:4444";
 
         $.ajax({
             url: myUrl,
@@ -58,7 +58,7 @@ $(document).ready(function() {
         });
     });
     $("#menu-memo").bind("click", () => {
-        var myUrl = "http://timzh.me:4444";
+        var myUrl = "http://matrixle.com:4444";
 
         $.ajax({
             url: myUrl,

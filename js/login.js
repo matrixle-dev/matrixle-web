@@ -22,7 +22,7 @@ $(document).ready(function() {
 
 
         $.ajax({
-            url: "http://timzh.me:4444",
+            url: "http://matrixle.com:4444",
             type: "POST",
             data: {
                 usr: account_name,
