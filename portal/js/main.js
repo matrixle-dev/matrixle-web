@@ -4,7 +4,7 @@ $(document).ready(function() {
         $("#work-space").load("https://matrixle.com/portal/dashboard.html"); 
     });
     $("#menu-students").bind("click", () => {
-        var myUrl = "search/";
+        var myUrl = "random/";
 
         $.ajax({
             url: myUrl,
@@ -22,7 +22,7 @@ $(document).ready(function() {
         });
     });
     $("#menu-database").bind("click", () => {
-        var myUrl = "search/";
+        var myUrl = "matrixle.com/search/random/";
 
         $.ajax({
             url: myUrl,
@@ -40,7 +40,7 @@ $(document).ready(function() {
         });
     });
     $("#menu-checklist").bind("click", () => {
-        var myUrl = "http://matrixle.com:4444";
+        var myUrl = "http://matrixle.com:4444/";
 
         $.ajax({
             url: myUrl,
