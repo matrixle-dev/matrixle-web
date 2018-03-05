@@ -4,12 +4,12 @@ $(document).ready(function() {
         $("#work-space").load("https://matrixle.com/portal/dashboard.html"); 
     });
     $("#menu-students").bind("click", () => {
-        var myUrl = "random/";
+        var myUrl = "../search/random/";
 
         $.ajax({
             url: myUrl,
             type: "POST",
-            data: "{message=10000}",
+            data: "",
             dataType: "json",
             contentType: "application/json",
             success: function(result) {
@@ -22,12 +22,12 @@ $(document).ready(function() {
         });
     });
     $("#menu-database").bind("click", () => {
-        var myUrl = "matrixle.com/search/random/";
+        var myUrl = "https://matrixle.com/search/random/";
 
         $.ajax({
             url: myUrl,
             type: "GET",
-            data: "{message=10000}",
+            data: "",
             dataType: "json",
             contentType: "application/json",
             success: function(result) {
