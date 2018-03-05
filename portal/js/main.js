@@ -2,9 +2,9 @@ $(document).ready(function() {
     $("#work-space").load("https://matrixle.com/portal/dashboard.html");
     $("#menu-dashboard").bind("click", () => {
         $("#work-space").load("https://matrixle.com/portal/dashboard.html"); 
-    });
+    }); 
     $("#menu-students").bind("click", () => {
-        var myUrl = "../search/random/";
+        var myUrl = "/search/random/";
 
         $.ajax({
             url: myUrl,
@@ -22,7 +22,7 @@ $(document).ready(function() {
         });
     });
     $("#menu-database").bind("click", () => {
-        var myUrl = "https://matrixle.com/search/random/";
+        var myUrl = "https://matrixle.com/portal/search/random/";
 
         $.ajax({
             url: myUrl,
