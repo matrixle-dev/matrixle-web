@@ -9,7 +9,7 @@ $(document).ready(function() {
         } else {
         }
 
-        var myUrl = "https://matrixle.com/login";
+        var myUrl = "https://matrixle.com/portal/login";
         $.ajax({
             url: myUrl,
             type: "GET",
